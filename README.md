@@ -1,15 +1,14 @@
-# aliasresolver.sol
+# AliasResolver.sol
 
-To install dependencies:
+### Deployments
 
-```bash
-bun install
-```
+* [mainnet:0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c](https://etherscan.io/address/0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c#code)
 
-To run:
+### Setup
 
-```bash
-bun run index.ts
-```
+1. `npm i`
+1. `forge i`
 
-This project was created using `bun init` in bun v1.2.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### Test
+
+* `npm test`

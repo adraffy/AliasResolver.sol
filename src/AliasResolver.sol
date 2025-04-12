@@ -58,7 +58,7 @@ contract AliasResolver is IExtendedResolver, CCIPReader, ERC165 {
         string memory key,
         string memory value
     ) external {
-        require(_isAliasKey(key), "only alias");
+        require(_isAliasKey(key), "expected alias");
         require(_canModifyName(node, msg.sender), "not authorized");
         aliases[node] = value;
         emit ITextResolver.TextChanged(node, key, key, value);
