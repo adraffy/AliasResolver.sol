@@ -1,0 +1,16 @@
+# https://book.getfoundry.sh/reference/config/overview
+
+[profile.default]
+
+solc_version = "0.8.27"
+optimizer = true
+optimizer_runs = 1000
+
+remappings = [
+	'@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/',
+	'@ensdomains/ens-contracts/=lib/ens-contracts/',
+]
+
+# forge i foundry-rs/forge-std
+# forge i ensdomains/ens-contracts
+# forge i OpenZeppelin/openzeppelin-contracts@release-v5.3

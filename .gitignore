@@ -1,0 +1,8 @@
+node_modules/
+cache/
+out/
+artifacts/
+junk/
+dist/
+.DS_Store
+.env
