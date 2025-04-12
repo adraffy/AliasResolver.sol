@@ -9,7 +9,7 @@
 
 ### Deployments
 
-* [mainnet:0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c](https://etherscan.io/address/0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c#code)
+* [`mainnet:0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c`](https://etherscan.io/address/0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c#code)
 
 ### Setup
 
@@ -18,4 +18,10 @@
 
 ### Test
 
-* `npm test`
+* [`npm test`](./test//mainnet.js) &mdash; aliases a variety of complex `mainnet` resolvers
+
+### Todo
+
+* `sepolia` and `holesky` deployments
+* support deep aliasing: `raffy.a.eth` &rarr; (`a.eth` &rarr; `b.eth`) &rarr; `raffy.b.eth`\
+ h/t Don_Luvat

@@ -20,7 +20,7 @@ const deployable = await deployer.prepare({
 	],
 });
 
-if (deployer.privateKey || true) {
+if (deployer.privateKey) {
 	await rl.question("Ready? (abort to stop) ");
 	await deployable.deploy();
 	const apiKey = await rl.question("Etherscan API Key: ");
