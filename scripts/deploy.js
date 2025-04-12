@@ -22,8 +22,7 @@ const deployable = await deployer.prepare({
 
 if (deployer.privateKey || true) {
 	await rl.question("Ready? (abort to stop) ");
-	//await deployable.deploy();
-	deployable.address = '0xD5e9Ae1dB3e1551fdaf57A130d6a723DD9cf8C2c';
+	await deployable.deploy();
 	const apiKey = await rl.question("Etherscan API Key: ");
 	if (apiKey) {
 		await deployable.verifyEtherscan({ apiKey });
